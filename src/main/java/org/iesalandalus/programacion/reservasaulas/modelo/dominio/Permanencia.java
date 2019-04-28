@@ -98,14 +98,10 @@ public class Permanencia {
     public String toString() {
          String diaParseado=dia.format(FORMATO_DIA);
          String tipoTramo="";
-         if(getTramo()==Tramo.MANANA){
-             tipoTramo="Mañana";
-         }else {
-             tipoTramo="Tarde";
-         }
+         
         
         
-        return "[dia=" + diaParseado + ", tramo=" + tipoTramo + "]";
+        return "[dia=" + diaParseado + ", tramo=" + getTramo() + "]";
     }
     
     
