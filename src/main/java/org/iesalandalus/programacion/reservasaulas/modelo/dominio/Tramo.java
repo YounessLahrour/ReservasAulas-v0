@@ -10,5 +10,18 @@ package org.iesalandalus.programacion.reservasaulas.modelo.dominio;
  * @author Youness
  */
 public enum Tramo {
-    MANANA, TARDE;
+    MANANA("Mañana"), 
+    TARDE("Tarde");
+    private String cadenaAMostrar;
+    
+    private Tramo(String cadenaAMostrar){
+        this.cadenaAMostrar=cadenaAMostrar;
+    }
+
+    @Override
+    public String toString() {
+        return cadenaAMostrar;
+    }
+    
+    
 }
